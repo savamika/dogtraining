@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nev_PACKAGE"
+            android:icon="@drawable/ic_package"
+            android:title="@string/PACKAGE" />
+        <item
+            android:id="@+id/nav_MYORDER"
+            android:icon="@drawable/ic_order"
+            android:title="MY ORDER" />
+        <item
+            android:id="@+id/nav_TRAININGCOURSE"
+            android:icon="@drawable/ic_dog_training2"
+            android:title="@string/TRAININGCOURSE" />
+        <item
+            android:id="@+id/nav_DOGACCESSORIES"
+            android:icon="@drawable/ic_accecrise"
+            android:title="@string/DOGACCESSORIES" />
+        <item
+            android:id="@+id/nav_DOGMART"
+            android:icon="@drawable/ic_shopping_cart"
+            android:title="@string/DOGMART" />
+        <item
+            android:id="@+id/nav_NEWSFEEDS"
+            android:icon="@drawable/ic_newspaper"
+            android:title="@string/NEWSFEEDS" />
+
+        <item
+            android:id="@+id/nav_BREEDINFO"
+            android:icon="@drawable/ic_newspaper"
+            android:title="@string/BREEDINFO" />
+
+        <item
+            android:id="@+id/nav_ADOPTION"
+            android:icon="@drawable/ic_dog_training"
+            android:title="@string/ADOPTION" />
+        <item
+            android:id="@+id/nav_MyADOPTION"
+            android:icon="@drawable/ic_dog_training"
+            android:title="My ADOPTION" />
+
+        <item
+            android:id="@+id/nav_MYPROFILE"
+            android:icon="@drawable/ic_myprofile"
+            android:title="@string/MYPROFILE" />
+
+        <item
+            android:id="@+id/nav_YOUTUBE"
+            android:icon="@drawable/ic_youtube"
+            android:title="@string/YOUTUBE" />
+
+        <item
+            android:id="@+id/nav_POLICIES"
+            android:icon="@drawable/ic_policies"
+            android:title="@string/POLICIES" />
+
+        <item
+            android:id="@+id/nav_SUPPORT"
+            android:icon="@drawable/ic_support"
+            android:title="@string/SUPPORT" />
+
+        <item
+            android:id="@+id/nav_LOGOU"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/LOGOU" />
+
+    </group>
+</menu>

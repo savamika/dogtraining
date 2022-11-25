@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.firebase.NotificationActivity">
+
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_back"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/back_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ImageView>
+
+    </LinearLayout>
+
+
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recyclerview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+   </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</LinearLayout>

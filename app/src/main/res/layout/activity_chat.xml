@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verylightgray"
+    android:orientation="vertical"
+    tools:context=".ui.chat.ChatActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="@dimen/_40sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_white"/>
+
+        <TextView
+            android:id="@+id/tv_commandname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Chat "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"></TextView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_headerrecyler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_headerrecyler"
+                android:layout_marginBottom="@dimen/_50sdp">
+
+                <TextView
+                    android:id="@+id/txt_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:text="Chat now"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sdp">
+
+                </TextView>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/userrecyclerview"
+android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txt_chat"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_55sdp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_alignParentBottom="true"
+    app:cardMaxElevation="5dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="3dp">
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rlimage"
+
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/btn_camera"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_camera" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlvideo"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/rlimage">
+
+            <ImageView
+                android:id="@+id/btn_video"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_video" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_video"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:text="Take video"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlaudio"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/rlvideo">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/ic_mic_startrecord"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_mic" />
+
+            <ImageView
+
+                android:id="@+id/ic_mic_stoprecord"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_mic"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="37dp"
+                android:text="Record"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="STOP"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/button2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Play"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="STOP PLAYING RECORDING "
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_toRightOf="@+id/rlvideo"
+            android:background="#fff">
+
+
+            <EditText
+                android:id="@+id/text_send"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btn_send"
+                android:background="@android:color/transparent"
+                android:hint="Type a message..."
+                android:textColorHint="@color/grey_600" />
+
+
+            <RelativeLayout
+
+                    android:id="@+id/btn_send"
+                android:layout_width="@dimen/_50sdp"
+
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+
+                <ImageView
+                    android:layout_width="25dp"
+
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_send" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#72000000">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardMaxElevation="@dimen/_7sdp">
+
+            <com.github.rahatarmanahmed.cpv.CircularProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:cpv_animAutostart="true"
+                app:cpv_color="@color/colorPrimary"
+                app:cpv_indeterminate="true"
+                app:cpv_thickness="4dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

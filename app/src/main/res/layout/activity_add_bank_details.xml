@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.ADOPTION.AdoptionFormActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_height="@dimen/_60sdp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:paddingTop="@dimen/_5sdp"
+                    android:layout_weight=".5"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@drawable/back_white"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"></ImageView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <EditText
+                android:textSize="@dimen/_14sdp"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_bankname"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/gray_corner"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Bank name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+
+            <EditText
+                android:textSize="@dimen/_14sdp"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_account"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/gray_corner"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Account no"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="10"
+                android:padding="@dimen/_10sdp" />
+
+            <EditText
+                android:textSize="@dimen/_14sdp"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_ifsc"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/gray_corner"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Ifsc code"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+            <EditText
+                android:textSize="@dimen/_14sdp"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_address"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/gray_corner"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Address"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:text="Submit"
+                android:textSize="@dimen/_14sdp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout
+        android:id="@+id/progress_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#72000000">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardMaxElevation="@dimen/_7sdp">
+
+            <com.github.rahatarmanahmed.cpv.CircularProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:cpv_animAutostart="true"
+                app:cpv_color="@color/colorPrimary"
+                app:cpv_indeterminate="true"
+                app:cpv_thickness="4dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

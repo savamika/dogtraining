@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="-20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_400sdp"
+                android:src="@drawable/logindog2"
+                />
+
+
+            <TextView
+                android:paddingTop="@dimen/_10sdp"
+                android:background="#fcf5e3"
+                android:textAlignment="center"
+                android:id="@+id/onestape"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:fontFamily="@font/bahnschrift"
+                android:textSize="@dimen/_26sdp"
+                android:text="SMART DOG TRAINING"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_below="@+id/onestape"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/bahnschrift"
+                android:textSize="@dimen/_20sdp"
+                android:text="WE MAKE SMART PET OWNER"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/relativelayout"
+                android:layout_marginTop="@dimen/_270sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_15sdp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:orientation="vertical"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp">
+
+
+
+                            <EditText
+                                android:textSize="@dimen/_14sdp"
+                                android:windowSoftInputMode="stateAlwaysVisible"
+                                android:overScrollMode="always"
+                                android:scrollbarStyle="insideInset"
+                                android:singleLine="false"
+                                android:isScrollContainer="true"
+                                android:focusable="true"
+                                android:id="@+id/et_emailmobile"
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:background="@drawable/gray_corner"
+                                android:drawablePadding="@dimen/_10sdp"
+                                android:hint="Mobile Number / Email"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:padding="@dimen/_10sdp" />
+
+
+
+                            <EditText
+                                android:textSize="@dimen/_14sdp"
+                                android:windowSoftInputMode="stateAlwaysVisible"
+                                android:overScrollMode="always"
+                                android:scrollbarStyle="insideInset"
+                                android:singleLine="false"
+                                android:isScrollContainer="true"
+                                android:focusable="true"
+                                android:id="@+id/et_password"
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:background="@drawable/gray_corner"
+                                android:drawablePadding="@dimen/_10sdp"
+                                android:hint="Password"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword"
+                                android:padding="@dimen/_10sdp" />
+
+
+
+
+                            <LinearLayout
+                                android:id="@+id/forgotpassword"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:weightSum="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:id="@+id/forgot_password"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:text="@string/title_activity_forgot_password" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="62dp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/signIn_signInButton"
+                                    android:layout_width="@dimen/_200sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@drawable/signupbackground"
+                                    android:text="Sign in"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:textStyle="bold" />
+
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_below="@+id/relativelayout"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="binding_14"
+                   android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true">
+
+
+                    <TextView
+                        android:layout_margin="@dimen/_10sdp"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/_26sdp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..If feeling lazy.."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_margin="@dimen/_10sdp"
+                        android:id="@+id/img_facebook"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/google" />
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/loginButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+
+                    <ImageView
+                        android:layout_margin="@dimen/_10sdp"
+                        android:id="@+id/signIn_google"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/facebook"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/progress_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#72000000">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardMaxElevation="@dimen/_7sdp">
+
+            <com.github.rahatarmanahmed.cpv.CircularProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:cpv_animAutostart="true"
+                app:cpv_color="@color/colorPrimary"
+                app:cpv_indeterminate="true"
+                app:cpv_thickness="4dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

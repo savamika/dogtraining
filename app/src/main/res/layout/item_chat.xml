@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/admin_lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_150sdp"
+        android:clipToPadding="false"
+        android:paddingVertical="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="60dp"
+
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_2sdp"
+        app:cardMaxElevation="@dimen/_2sdp">
+
+
+        <TextView
+            android:id="@+id/admin_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="Hello"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_cameraimageee_admin"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_below="@+id/name"
+            android:layout_alignParentLeft="true"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_camera"
+            android:visibility="gone"></ImageView>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+android:visibility="gone"
+        android:id="@+id/adminvideocard"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/usrname"
+
+        android:layout_margin="10dp"
+
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardMaxElevation="@dimen/_5sdp">
+
+
+
+        <RelativeLayout
+
+            android:background="@color/gray"
+            android:id="@+id/admin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/usrname">
+
+
+
+
+            <ImageView
+                android:id="@+id/iv_admin_video_thumbnail"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:scaleType="fitXY"
+
+             >
+
+            </ImageView>
+
+
+
+
+
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/admin_play"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_playdisplay"
+            android:visibility="visible" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/admin_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_lin"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:text="2:00"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/usrname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:gravity="right"
+        android:paddingBottom="4dp"
+        android:text="User"
+        android:visibility="gone" />
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/usercard"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/usrname"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardMaxElevation="@dimen/_5sdp">
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+        android:background="@color/gray"
+            android:id="@+id/userlayout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/usrname">
+
+
+
+
+            <ImageView
+                android:id="@+id/iv_photo_user"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_camera"
+                android:visibility="gone">
+
+            </ImageView>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/speaker"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:src="@drawable/ic_volume"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/mute"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:src="@drawable/ic_mute"
+                    android:visibility="gone">
+
+
+                </ImageView>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/image_play"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_playdisplay"
+            android:visibility="visible" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cust_lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usrname"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/CHatsky"
+
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_2sdp"
+        app:cardMaxElevation="@dimen/_2sdp">
+
+        <RelativeLayout
+            android:id="@+id/rel_user"
+
+
+            android:layout_width="match_parent"
+
+
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+
+                android:id="@+id/customer_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="wrap."
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+
+
+        <!-- <TextView
+              android:layout_gravity="right"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/customer_msg"
+             android:background="@drawable/my_message"
+             android:textColor="#000"
+             android:padding="10dp"
+             android:elevation="2dp"
+             android:textSize="18dp"
+             android:layout_alignParentRight="true"
+             android:text="Placeholder message"
+             />-->
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/my_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cust_lin"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="2:00"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp" />
+
+</RelativeLayout>

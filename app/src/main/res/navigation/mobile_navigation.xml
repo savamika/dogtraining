@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.healthcare.dogtraining.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_TRAININGCOURSE"
+        android:name="com.healthcare.dogtraining.ui.TRAININGCOURSE.TtainingcourseFragment"
+        android:label="@string/TRAININGCOURSE"
+        tools:layout="@layout/fragment_ttainingcourse" />
+    <fragment
+        android:id="@+id/nav_DOGACCESSORIES"
+        android:name="com.healthcare.dogtraining.ui.DOGACCESSORIES.DogaccessoriesFragment"
+        android:label="@string/DOGMART"
+        tools:layout="@layout/fragment_dogaccessories" />
+
+    <fragment
+        android:id="@+id/nav_DOGMART"
+        android:name="com.healthcare.dogtraining.ui.DOGMART.DogmartFragment"
+        android:label="@string/DOGMART"
+        tools:layout="@layout/fragment_dogmart" />
+
+    <fragment
+        android:id="@+id/nav_NEWSFEEDS"
+        android:name="com.healthcare.dogtraining.ui.NEWSFEEDS.NewsfeedFragment"
+        android:label="@string/NEWSFEEDS"
+        tools:layout="@layout/fragment_newsfeed" />
+
+    <fragment
+        android:id="@+id/nav_BREEDINFO"
+        android:name="com.healthcare.dogtraining.ui.BREEDINFO.BreedinfoFragment"
+        android:label="@string/BREEDINFO"
+        tools:layout="@layout/fragment_breedinfo" />
+    <fragment
+        android:id="@+id/nav_ADOPTION"
+        android:name="com.healthcare.dogtraining.ui.ADOPTION.AdoptionFragment"
+        android:label="@string/ADOPTION"
+        tools:layout="@layout/fragment_adoption" />
+    <fragment
+        android:id="@+id/nav_MyADOPTION"
+        android:name="com.healthcare.dogtraining.ui.ADOPTION.My_AdoptionFragment"
+        android:label="MyADOPTION"
+        tools:layout="@layout/fragment_adoption" />
+
+    <fragment
+        android:id="@+id/nav_YOUTUBE"
+        android:name="com.healthcare.dogtraining.ui.YOUTUBE.YoutubeFragment"
+        android:label="@string/YOUTUBE"
+        tools:layout="@layout/fragment_youtube" />
+    <fragment
+        android:id="@+id/nav_POLICIES"
+        android:name="com.healthcare.dogtraining.ui.POLICIES.PoliciesFragment"
+        android:label="@string/POLICIES"
+        tools:layout="@layout/fragment_policies" />
+
+    <fragment
+        android:id="@+id/nav_SUPPORT"
+        android:name="com.healthcare.dogtraining.ui.SUPPORT.SuportFragment"
+        android:label="@string/SUPPORT"
+        tools:layout="@layout/fragment_suport" />
+
+    <fragment
+        android:id="@+id/nav_MYPROFILE"
+        android:name="com.healthcare.dogtraining.ui.MYPROFILE.MyprofileFragment"
+        android:label="@string/MYPROFILE"
+        tools:layout="@layout/fragment_suport" />
+
+
+
+</navigation>

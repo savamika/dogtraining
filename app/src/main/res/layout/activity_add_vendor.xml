@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".VendorSignup.AddVendorActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:text="..Good Initiative for Your Dog.."
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_24sdp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="SIGNUP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:textSize="@dimen/_14sdp"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_Name"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/gray_corner"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Your Name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+
+            <EditText
+                android:textSize="@dimen/_14sdp"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_corner"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint=" Your Email"
+                android:imeOptions="actionGo"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:padding="@dimen/_10sdp" />
+
+
+
+
+            <EditText
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_MobileNumber"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_corner"
+                android:layout_height="@dimen/_50sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Mobile Number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="@dimen/_10sdp" />
+
+
+
+            <EditText
+                android:textSize="@dimen/_14sdp"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_city"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_corner"
+                android:layout_height="@dimen/_50sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="City"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+            <EditText
+                android:textSize="@dimen/_14sdp"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_pincode"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_corner"
+                android:layout_height="@dimen/_50sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="PinCode"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="@dimen/_10sdp" />
+
+
+            <EditText
+                android:textSize="@dimen/_14sdp"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_corner"
+                android:layout_height="@dimen/_50sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Address"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+
+
+            <EditText
+                android:textSize="@dimen/_14sdp"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_pswrd"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_corner"
+                android:layout_height="@dimen/_50sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Password"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+
+
+
+            <EditText
+                android:textSize="@dimen/_14sdp"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_shopname"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_corner"
+                android:layout_height="@dimen/_50sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Shopname"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:textAlignment="center"
+                android:text="Shop Image"
+                android:textColor="@color/gray"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/l_shop"
+                android:background="@drawable/gray_corner"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="@dimen/_100sdp"
+                android:orientation="vertical"
+                android:layout_height="@dimen/_150sdp">
+
+
+          <ImageView
+              android:id="@+id/iv_shopimage"
+              android:layout_width="@dimen/_100sdp"
+              android:scaleType="center"
+              android:src="@drawable/ic_baseline_file"
+              android:layout_height="@dimen/_150sdp">
+
+          </ImageView>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:textAlignment="center"
+                android:text="ID Proof"
+                android:textColor="@color/gray"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:id="@+id/l_idproof"
+                android:background="@drawable/gray_corner"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_150sdp">
+
+
+                <ImageView
+                    android:id="@+id/iv_idproof"
+                    android:layout_width="@dimen/_100sdp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_baseline_file"
+                    android:layout_height="@dimen/_150sdp">
+
+                </ImageView>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- sign In Button -->
+            <Button
+                android:id="@+id/SIGNUPTYPE"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/signupbackground"
+                android:text="NEXT"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_below="@+id/relativelayout"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="binding_14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true">
+
+
+                    <TextView
+                        android:layout_margin="@dimen/_10sdp"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/_26sdp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..If feeling lazy.."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_margin="@dimen/_10sdp"
+                        android:id="@+id/forgot_google"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/google" />
+
+                    <ImageView
+                        android:layout_margin="@dimen/_10sdp"
+                        android:id="@+id/signIn_facebook"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/facebook"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

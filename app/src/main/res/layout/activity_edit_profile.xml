@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".EditProfileActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="@dimen/_220sdp">
+
+
+        <LinearLayout
+            android:id="@+id/update_profile"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/gray_corner"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:text="Save Changes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:backgroundTint="@color/colorPrimary"
+                app:civ_border_width="@dimen/_2sdp"
+                app:civ_border_color="@color/colorPrimary"
+                android:id="@+id/image"
+
+                android:padding="@dimen/_5sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/profileid"
+            android:background="@drawable/gray_corner"
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content">
+
+
+
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Name">
+
+            </TextView>
+
+
+                <EditText
+
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="enter name"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_10sdp" />-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="@dimen/_2sdp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    >
+
+                    <!-- <LinearLayout
+                         android:layout_weight=".6"
+                         android:layout_width="match_parent"
+                         android:orientation="vertical"
+                         android:layout_margin="@dimen/_10sdp"
+                         android:layout_height="wrap_content">
+
+                         <TextView
+
+                             android:layout_width="match_parent"
+                             android:textColor="@color/black"
+                             android:maxLines="1"
+                             android:ellipsize="end"
+                             android:text="Name : "
+                             android:textSize="@dimen/_16sdp"
+                             android:layout_height="wrap_content"/>
+
+
+
+                     </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_weight=".4"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:id="@+id/et_name"
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/black"
+                            android:hint="UserName"
+                            android:textSize="@dimen/_16sdp"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="@dimen/_2sdp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_weight=".4"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:id="@+id/et_phone"
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/black"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:hint="phoneNumber"
+                            android:maxLength="10"
+                            android:textSize="@dimen/_16sdp"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="@dimen/_1dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_weight=".4"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:id="@+id/et_mail"
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/black"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:focusable="true"
+                            android:text=""
+                            android:hint="email"
+
+                            android:textSize="@dimen/_16sdp"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="@dimen/_2sdp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_weight=".6"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:textColor="@color/black"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:text="Gender : "
+                            android:textSize="@dimen/_16sdp"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight=".4"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_height="wrap_content">
+
+                        <RadioGroup
+                            android:id="@+id/radioGrp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            >
+                            <RadioButton
+                                android:id="@+id/radioM"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:checked="true"
+                                android:layout_weight="1"
+                                android:textSize="14dp"
+                                android:text="Male"
+                                />
+                            <RadioButton
+                                android:id="@+id/radioF"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:checked="false"
+                                android:layout_weight="1"
+                                android:textSize="14dp"
+                                android:text="Female"
+                                />
+                        </RadioGroup>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

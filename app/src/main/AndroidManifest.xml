@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.healthcare.dogtraining">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".VendorSignup.AddBankDetails"></activity>
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".ui.chat.DummyActivity" />
+        <activity android:name=".ui.chat.AudioActivity" />
+        <activity android:name=".ui.chat.VideoPlayer" />
+        <activity android:name=".ui.Refund.Activity_refund" />
+        <activity android:name=".ui.TRAININGCOURSE.InstructionsActivity" />
+        <activity android:name=".ui.TRAININGCOURSE.VideoVIewActivity" />
+        <activity android:name=".ui.TRAININGCOURSE.PurchasedPlanActivity" />
+        <activity android:name=".VendorSignup.OptionselectedActivity" />
+        <activity android:name=".VendorSignup.AddVendorActivity" />
+        <activity android:name=".ui.chat.ChatActivity" />
+        <activity android:name=".ui.chat.Plan_purchasedChatActivity" />
+        <activity android:name=".ui.firebase.NotificationActivity" />
+        <activity android:name=".ui.YOUTUBE.YoutubevideoviewActivity" />
+        <activity android:name=".ui.VideoViewActivity" />
+        <activity android:name=".ui.ADOPTION.AdoptionFormActivity" />
+        <activity android:name=".ui.MYPROFILE.PetdetailsActivity" />
+        <activity android:name=".ui.Address.GetAddressListActivity" />
+        <activity android:name=".ui.Address.AddAddressActivity" />
+        <activity android:name=".ui.NEWSFEEDS.CommentActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".ui.BREEDINFO.BridinfoDetailsActivity" />
+        <activity android:name=".AdoptionDetailsActivity" />
+        <activity android:name=".ui.DOGACCESSORIES.DogAccessoriesActivity" />
+        <activity android:name=".ForgetEmailActivity" />
+        <activity android:name=".OrderHistoryActivity" />
+        <activity android:name=".ProfileDetailsActivity" />
+        <activity android:name=".SignupdetailsActivity" />
+        <activity android:name=".PlaceOrderActivity" />
+        <activity android:name=".CartlistActivity" />
+        <activity android:name=".ProductDetailsActivity" />
+        <activity android:name=".DogcategorylistActivity" />
+        <activity android:name=".ProductlistActivity" />
+        <activity android:name=".ChatdetailsActivity" />
+        <activity android:name=".PacagedetailsActivity" />
+        <activity android:name=".PacageListActivity" />
+        <activity android:name=".TrainingPacageActivity" />
+        <activity android:name=".SucessActivity" />
+        <activity android:name=".ui.ADOPTION.EditAdoptiondETAILSActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ForgotPpassword" />
+        <activity android:name=".OTp_Activity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MyAdoptionDetailsActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".ui.firebase.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".ui.firebase.MyFirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

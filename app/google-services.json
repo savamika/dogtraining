@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "266199684108",
+    "project_id": "dog-training-3f34a",
+    "storage_bucket": "dog-training-3f34a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266199684108:android:652a814bd102b20db18a29",
+        "android_client_info": {
+          "package_name": "com.healthcare.dogtraining"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266199684108-891md7f7b2kinsq3vhshl65m0rfkgn32.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.healthcare.dogtraining",
+            "certificate_hash": "718be1d4b4207243cb8b3601521647e54ed83e5a"
+          }
+        },
+        {
+          "client_id": "266199684108-i90v5bknfim9t1goll0jk8ekm4hknlop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXb7XWv5y56YMT74CrsjLxsIizGWceUCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266199684108-i90v5bknfim9t1goll0jk8ekm4hknlop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

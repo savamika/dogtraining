@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/lightgray"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.DOGACCESSORIES.DogAccessoriesActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/back_white"
+                android:padding="@dimen/_12sdp"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"></ImageView>
+            <TextView
+                android:id="@+id/titletext"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_back"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16sdp"
+                android:text="Shop By category"
+                android:layout_gravity="center"
+                android:padding="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchVieww"
+                android:layout_width="wrap_content"
+
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/cartlist"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                app:defaultQueryHint="Search"
+                app:closeIcon="@drawable/close"
+                app:queryHint="Search"
+                android:textAlignment="center"
+                android:theme="@style/Theme.AppCompat.Light"
+                app:searchIcon="@drawable/ic_search" />
+
+
+            <RelativeLayout
+                android:id="@+id/cartlist"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_bag"
+                    android:padding="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:foregroundGravity="right"
+                    android:layout_height="wrap_content"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv_countcart"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="0"
+                    android:padding="@dimen/_2sdp"
+                    android:background="@drawable/ic_dry_clean"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/top"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#72000000">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardMaxElevation="@dimen/_7sdp">
+
+            <com.github.rahatarmanahmed.cpv.CircularProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:cpv_animAutostart="true"
+                app:cpv_color="@color/colorPrimary"
+                app:cpv_indeterminate="true"
+                app:cpv_thickness="4dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
